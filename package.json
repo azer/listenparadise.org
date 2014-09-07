@@ -21,6 +21,7 @@
     "centered-cover-background": "0.0.x",
     "get-json": "0.0.2",
     "key-event": "0.0.0",
-    "play-audio": "^0.1.0"
+    "play-audio": "^0.1.0",
+    "playfair-display": "0.0.0"
   }
 }

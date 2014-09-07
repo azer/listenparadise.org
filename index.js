@@ -1,11 +1,12 @@
 var Brick = require("brick");
 var CenteredCover = require("centered-cover-background");
+var PlayfairDisplay = require("playfair-display");
 var request = require("get-json");
 var onKey = require("key-event");
 var player = require("./player");
 var loaded;
 
-module.exports = Brick(CenteredCover, {
+module.exports = Brick(CenteredCover, PlayfairDisplay, {
   update: update,
   loop: loop,
   show: show,
