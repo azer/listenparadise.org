@@ -1,0 +1,26 @@
+{
+  "name": "radio-paradise",
+  "version": "0.0.0",
+  "description": "Radio Paradise Player",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "radio",
+    "paradise"
+  ],
+  "repository": {
+    "url": "git@github.com:bricks/listenparadise.org.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "dependencies": {
+    "brick": "0.0.x",
+    "centered-cover-background": "0.0.x",
+    "get-json": "0.0.2",
+    "key-event": "0.0.0",
+    "play-audio": "^0.1.0"
+  }
+}

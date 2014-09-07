@@ -1,0 +1,38 @@
+.title {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 10px;
+  right: 10px;
+  font: 700 21px/1.2 "playfair display";
+  color: rgba(255,255,255,0.15);
+  cursor: default;
+  margin-top: 20px;
+}
+
+audio {
+  background: #000;
+  width: 100%;
+  top: 30px;
+  position: absolute;
+  z-index: 9999;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.songs {
+  list-style: none;
+  font: italic 700 16px/1.2 "playfair display";
+  color: rgba(255,255,255,0.6);
+}
+
+.songs, .songs li {
+  list-style: none;
+  padding: 0;
+  padding: 0;
+}
+
+ul li:first-child {
+  color: #fff;
+}
