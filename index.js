@@ -3,6 +3,7 @@ var CenteredCover = require("centered-cover-background");
 var request = require("get-json");
 var onKey = require("key-event");
 var player = require("./player");
+var loaded;
 
 module.exports = Brick(CenteredCover, {
   update: update,
@@ -14,7 +15,6 @@ module.exports = Brick(CenteredCover, {
 function update (paradise, done) {
   request('http://api.listenparadise.org', function (error, response) {
     if (error) throw error;
-
     paradise.songs = response.result;
     done();
   });
@@ -30,10 +30,16 @@ function show (paradise) {
     return { ':first': { _html: song } };
   }));
 
+  paradise.brick.bind('.songs', {
+    'class': loaded ? 'songs' : 'songs loading'
+  });
+
   paradise.brick.bind('.cover-content', paradise.brick.template('songs'));
 }
 
 function ready (paradise) {
+  loaded = true;
+  paradise.brick.select('.songs').removeClass('loading');
   player.start();
   onKey(window, 'space', player.toggle);
 }
