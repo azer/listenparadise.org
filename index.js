@@ -26,7 +26,7 @@ function loop (playing, next) {
 }
 
 function show (paradise) {
-  CenteredCover.methods.show(paradise, 'https://farm3.staticflickr.com/2876/10973316604_a40772826c_o.jpg');
+  CenteredCover.methods.show(paradise, 'https://farm4.staticflickr.com/3896/14215383097_83c5cd4780_o.jpg');
   paradise.brick.bind('ul li', paradise.songs.map(function (song) {
     return { ':first': { _html: song } };
   }));
