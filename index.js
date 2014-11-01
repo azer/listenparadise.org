@@ -8,7 +8,6 @@ var loaded;
 
 module.exports = Brick(CenteredCover, PlayfairDisplay, {
   update: update,
-  loop: loop,
   show: show,
   ready: ready
 });
@@ -19,10 +18,6 @@ function update (paradise, done) {
     paradise.songs = response.result;
     done();
   });
-}
-
-function loop (playing, next) {
-  setTimeout(next, 5000);
 }
 
 function show (paradise) {
@@ -43,4 +38,6 @@ function ready (paradise) {
   paradise.brick.select('.songs').removeClass('loading');
   player.start();
   onKey(window, 'space', player.toggle);
+
+  setInterval(paradise.brick.refresh, 3000);
 }
