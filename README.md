@@ -1,17 +1,3 @@
-## listenparadise.org
+## deprecated
 
-Radio Paradise Player
-
-## Usage
-
-To start it on a server:
-
-```
-$ brick serve
-```
-
-To build it:
-
-```
-$ brick build dist/
-```
+Moved to [azer/radio-paradise](https://github.com/azer/radio-paradise)
